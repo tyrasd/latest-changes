@@ -2,54 +2,139 @@
 <html lang="en">
 
 <head>
+  <!-- Basic -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Latest changes on OpenStreetMap</title>
-  <link rel="Shortcut Icon" href="favicon.ico">
-  <link rel='stylesheet' type='text/css' href='css/style.css' />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>OSM Latest Changes</title>
+
+  <!-- Search Engine -->
+  <meta name="description" content="Get a quick overview of the latest changes in OpenStreetMap in a certain area">
+  <meta name="image" content="https://rene78.github.io/latest-changes/img/SocialMedia-Latest-Changes.png">
+  <meta name="keywords" content="OpenStreetMap, OSM, quality, checker, local, changesets, vandalism" />
+
+  <!-- Schema.org for Google -->
+  <meta itemprop="name" content="OSM Latest Changes">
+  <meta itemprop="description" content="Check latest changes in OpenStreetMap in a certain area">
+  <meta itemprop="image" content="https://rene78.github.io/latest-changes/img/SocialMedia-Latest-Changes.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Open Graph general (Facebook, Twitter, ...) -->
+  <meta property="og:title" content="OSM Latest Changes">
+  <meta property="og:description" content="Check latest changes in OpenStreetMap in a certain area">
+  <meta property="og:image" content="https://rene78.github.io/latest-changes/img/SocialMedia-Latest-Changes.png">
+  <meta property="og:logo" content="https://rene78.github.io/latest-changes/img/android-chrome-512x512.png">
+  <meta property="og:url" content="https://rene78.github.io/latest-changes/">
+  <meta property="og:site_name" content="OSM Latest Changes">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon related -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+  <link rel="manifest" href="./img/site.webmanifest">
+  <link rel="mask-icon" href="./img/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="./img/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="./img/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Style related -->
+  <!-- <link rel="stylesheet" href="//unpkg.com/leaflet@1.7.1/dist/leaflet.css"> -->
+  <link rel="stylesheet" href="./css/leaflet.css">
   <link rel='stylesheet' type='text/css' href='css/site.css' />
-  <link rel="stylesheet" href="//unpkg.com/leaflet@1.7.1/dist/leaflet.css">
-  <link rel="stylesheet" href="//unpkg.com/leaflet-gesture-handling/dist/leaflet-gesture-handling.min.css" type="text/css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.76.0/dist/L.Control.Locate.min.css" />
-  <script src="//unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
-  <script src="//unpkg.com/leaflet-gesture-handling"></script>
-  <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.76.0/dist/L.Control.Locate.min.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="//unpkg.com/leaflet-gesture-handling/dist/leaflet-gesture-handling.min.css"
+    type="text/css">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.76.0/dist/L.Control.Locate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-contextmenu/1.4.0/leaflet.contextmenu.css"
+    integrity="sha512-sgMNQqQqKbwIukMPRGv16lpaZLXNnWdtgLtzUwrorvhoLyC4QnkuT59T1jq9GTaVoZJJ4bnKjs8lS5shjc02AA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- External scripts -->
+  <!-- Leaflet -->
+  <script src="./js/leaflet.js" defer></script>
+  <!-- Leaflet Gesture Handling ("use 2 fingers to pan") -->
+  <script src="//unpkg.com/leaflet-gesture-handling" defer></script>
+  <!-- Leaflet control to geolocate the user. -->
+  <script src="./js/L.Control.Locate.min.js" defer></script>
+  <!-- Leaflet Contextmenu (Right mouse button menu) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-contextmenu/1.4.0/leaflet.contextmenu.min.js"
+    integrity="sha512-8sfQf8cr0KjCeN32YPfjvLU2cMvyY1lhCXTMfpTZ16CvwIzeVQtwtKlxeSqFs/TpXjKhp1Dcv77LQmn1VFaOZg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+  <!-- Selections allow data-driven transformation of the document object model (DOM) -->
+  <script src='js/d3-selection.min.js' defer></script>
+  <!-- Parse, validate, manipulate, and display dates and times in JavaScript -->
+  <script src='js/moment.min.js' defer></script>
+  <!-- Add dynamic URL hashes to web pages with Leaflet maps, e.g. "#18/47.67643/9.49085" -->
+  <script src='js/leaflet-hash.js' defer></script>
+  <!-- Converts OSM data to GeoJSON -->
+  <script src='js/osmtogeojson.js' defer></script>
+
+  <!-- Application script - MUST BE LAST since it depends on the others -->
+  <script src='js/site.js' defer></script>
 </head>
 
 <body>
-  <div class="infobox"></div>
   <div class='container'>
-    <div class='col pad2'>
-      <div class="heading">
-        <h3>Explore latest changes on OpenStreetMap</h3>
-        <img src="favicon.ico" alt="Logo">
-        <!-- <div>
-          <p> -->
-            <select id="resolution">
-              <option value="1">Last 24 Hours</option>
-              <option value="3">Last 3 Days</option>
-              <option value="7" selected>Last 7 Days</option>
-              <option value="30">Last 30 Days</option>
-            </select>
-          <!-- </p>
-        </div> -->
+    <div class="infobox"></div>
+    <div class='sidebar'>
+      <div class="background">
+        <!-- Reason for 'background' div: After centering .heading and applying a background color
+         there it would not go all the way to the edges of the sidebar -->
+        <div class="heading">
+          <a href="https://github.com/rene78/latest-changes" target="_blank" rel="noopener noreferrer" class="logo-latest-changes" title="Go to GitHub repository"><img
+              src="./img/favicon.ico" id="clock" alt="Logo">SM Latest Changes</a>
+          <select id="resolution">
+            <option value="1">Last 24 Hours</option>
+            <option value="3">Last 3 Days</option>
+            <option value="7" selected>Last 7 Days</option>
+            <option value="30">Last 30 Days</option>
+          </select>
+          <button id="download-changesets-button" title="Get recent changesets in this region">
+            <svg class="circular-arrow">
+              <use href="img/icons.svg#circular-arrow"></use>
+            </svg>
+            <span id="download-changesets-button-text">Get Changesets</span>
+          </button>
+          <div class="filter-container hide">
+            <input type="checkbox" id="filter-red-checkbox" name="filter-red">
+            <label for="filter-red-checkbox" class="filter-red-checkbox-label"
+              title="Only show changesets which are potentially destructive">
+              <div class="traffic-light traffic-light-filter filter-red-color"><span class="gray"></span><span
+                  class="red"></span></div>
+            </label>
+            <div class="search-changesets-field-container" title="Filter for user name and changeset comment">
+              <svg class="filter-symbol">
+                <use href="img/icons.svg#filter"></use>
+              </svg>
+              <div class="delete-filter-input hide" title="Delete text in input field">
+                <svg class="delete-filter-input-symbol">
+                  <use href="img/icons.svg#x-symbol"></use>
+                </svg>
+              </div>
+              <input type="text" class="search-changesets-field" placeholder="Filter changesets">
+            </div>
+          </div>
+        </div>
       </div>
-      <div id='results'>
-      </div>
+      <ul id='results'>
+      </ul>
+      <div class="to-top hide" onclick="scrollToTop()" title="Back to top"><svg xmlns='http://www.w3.org/2000/svg'
+          class='ionicon' viewBox='0 0 512 512'>
+          <path fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='32'
+            d='M112 328l144-144 144 144' />
+        </svg></div>
     </div>
-    <div id='map' class='faded'>
-      <div id='zoom-in' class='hide'>Zoom in to view changes</div>
+    <div class="map-container">
+      <div id='map' class='faded'></div>
+      <div id='zoom-in' class='hide'>Zoom in to download changes</div>
+      <div id="loading-animation" class="hide"></div>
+      <div id="loading-animation-text" class="hide"></div>
     </div>
   </div>
-  <script src='js/d3.v3.min.js'></script>
-  <script src='js/d3-queue.v3.min.js'></script>
-  <script src='js/moment.min.js'></script>
-  <script src='js/leaflet-hash.js'></script>
-  <script src='js/leaflet-osm.js'></script>
-  <script src='js/osmtogeojson.js'></script>
-  <script src='js/site.js'></script>
 </body>
 
 </html>

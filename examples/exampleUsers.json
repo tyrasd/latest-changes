@@ -1,0 +1,63 @@
+{
+    "version": "0.6",
+    "generator": "OpenStreetMap server",
+    "copyright": "OpenStreetMap and contributors",
+    "attribution": "http://www.openstreetmap.org/copyright",
+    "license": "http://opendatacommons.org/licenses/odbl/1-0/",
+    "users": [
+        {
+            "user": {
+                "id": 257555,
+                "display_name": "rene78",
+                "account_created": "2010-04-03T20:43:12Z",
+                "description": "# About me\r\nJust a guy fascinated by OSM.\r\n\r\n# Useful sites\r\n\r\n## Data quality\r\n* [Latest Changes](https://rene78.github.io/latest-changes) (Check recent OSM changes within a certain cartographic boundary)\r\n\r\n## Mapping facilitation\r\n* [Opening hours evaluation tool](https://openingh.openstreetmap.de/evaluation_tool/) (Get opening hours formatted correctly for OSM)\r\n* [Relatify](https://relatify.monicz.dev/) (Tool to automatically improve bus relations)\r\n\r\n\r\n## OSM news\r\n* [Weekly OSM](https://weeklyosm.eu/)",
+                "contributor_terms": {
+                    "agreed": true
+                },
+                "img": {
+                    "href": "https://www.openstreetmap.org/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NzUzNSwicHVyIjoiYmxvYl9pZCJ9fQ==--c47865bd781391cf901465eb37823a92afd7bd69/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fbGltaXQiOlsxMDAsMTAwXX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--71e417a328c02e35ec87b6c7cd4e4524c74e4ec8/axl-rose2-e508623_1_.jpg"
+                },
+                "roles": [],
+                "changesets": {
+                    "count": 27162
+                },
+                "traces": {
+                    "count": 113
+                },
+                "blocks": {
+                    "received": {
+                        "count": 0,
+                        "active": 0
+                    }
+                }
+            }
+        },
+        {
+            "user": {
+                "id": 1213571,
+                "display_name": "mcliquid",
+                "account_created": "2013-01-28T13:01:25Z",
+                "description": "###About me\r\nI use OpenStreetMap intensively for various purposes and try to enrich the data with a lot of dedication. I always try to keep my changes in line with the wiki and stay in touch with the community via the forum or various local channels like Matrix, Telegram or similar. Feel free to contact me if you have any questions.\r\n\r\n###My favorite OSM tools:\r\n* StreetComplete [Wiki](https://wiki.openstreetmap.org/wiki/StreetComplete) [GitHub (direct download)](https://github.com/streetcomplete/StreetComplete) [Google PlayStore](https://play.google.com/store/apps/details?id=de.westnordost.streetcomplete)\r\n* [NotesReview](https://ent8r.github.io/NotesReview/)\r\n\r\n###OSM-related accounts:\r\n\r\n* [OSM Community](https://community.openstreetmap.org/u/mcliquid/)\r\n* [OSM Forum](https://forum.openstreetmap.org/profile.php?id=115687)\r\n* [OSM Wiki](https://wiki.openstreetmap.org/wiki/User:Mcliquid)\r\n* [Missing Maps](https://www.missingmaps.org/users/#/mcliquid)\r\n* [OSM help](https://help.openstreetmap.org/users/22192/mcliquid)\r\n* [git](https://github.com/mcliquid)\r\n* [hdyc](https://hdyc.neis-one.org/?mcliquid)\r\n* <a rel=\"me\" href=\"https://en.osm.town/@mcliquid\">Mastodon</a>",
+                "contributor_terms": {
+                    "agreed": true
+                },
+                "img": {
+                    "href": "https://www.gravatar.com/avatar/69a0c6c5e3d205d9338ebae6d34c766a.jpg?s=100&d=https%3A%2F%2Fapi.openstreetmap.org%2Fassets%2Favatar_large-54d681ddaf47c4181b05dbfae378dc0201b393bbad3ff0e68143c3d5f3880ace.png"
+                },
+                "roles": [],
+                "changesets": {
+                    "count": 72004
+                },
+                "traces": {
+                    "count": 47
+                },
+                "blocks": {
+                    "received": {
+                        "count": 0,
+                        "active": 0
+                    }
+                }
+            }
+        }
+    ]
+}

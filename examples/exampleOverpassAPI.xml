@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="Overpass API 0.7.58.3 b33c3320">
+<note>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</note>
+<meta osm_base="2022-06-24T20:41:51Z"/>
+
+  <bounds minlat="47.6486000" minlon="9.4723499" maxlat="47.6556466" maxlon="9.4822311"/>
+
+<action type="modify">
+<old>
+  <node id="2193083033" lat="47.6521043" lon="9.4757572" version="17" timestamp="2022-06-09T07:15:00Z" changeset="122148756" uid="257555" user="rene78">
+    <tag k="wheelchair" v="limited"/>
+    <tag k="disused:shop" v="toys"/>
+    <tag k="source" v="HiRes aerial imagery;LGL, www.lgl-bw.de"/>
+    <tag k="opening_hours" v="Mo off; Tu-Fr 09:30-16:30; Sa 09:30-16:00; Su,PH off"/>
+    <tag k="addr:city" v="Friedrichshafen"/>
+    <tag k="addr:country" v="DE"/>
+    <tag k="addr:housenumber" v="57"/>
+    <tag k="addr:postcode" v="88045"/>
+    <tag k="addr:street" v="Friedrichstraße"/>
+    <tag k="contact:facebook" v="https://www.facebook.com/SpielwarenDauth/"/>
+    <tag k="contact:instagram" v="https://www.instagram.com/spielwarenschinacher/"/>
+    <tag k="contact:phone" v="+49 7541 92210"/>
+    <tag k="contact:website" v="https://www.schinacher.de/"/>
+  </node>
+</old>
+<new>
+  <node id="2193083033" lat="47.6521043" lon="9.4757572" version="19" timestamp="2022-06-24T13:36:38Z" changeset="122803935" uid="257555" user="rene78">
+    <tag k="addr:city" v="Friedrichshafen"/>
+    <tag k="addr:country" v="DE"/>
+    <tag k="addr:housenumber" v="57"/>
+    <tag k="addr:postcode" v="88045"/>
+    <tag k="addr:street" v="Friedrichstraße"/>
+    <tag k="clothes" v="children"/>
+    <tag k="contact:facebook" v="https://www.facebook.com/SpielwarenDauth/"/>
+    <tag k="contact:instagram" v="https://www.instagram.com/spielwarenschinacher/"/>
+    <tag k="contact:phone" v="+49 7541 92210"/>
+    <tag k="contact:website" v="https://www.schinacher.de/"/>
+    <tag k="name" v="Schinacher"/>
+    <tag k="opening_hours" v="Mo off; Tu-Fr 09:30-16:30; Sa 09:30-16:00; Su,PH off"/>
+    <tag k="shop" v="clothes"/>
+    <tag k="source" v="HiRes aerial imagery;LGL, www.lgl-bw.de"/>
+    <tag k="wheelchair" v="limited"/>
+  </node>
+</new>
+</action>
+<action type="modify">
+<old>
+  <node id="2428180099" lat="47.6505193" lon="9.4783183" version="6" timestamp="2021-12-28T21:54:20Z" changeset="115490314" uid="257555" user="rene78">
+    <tag k="wheelchair" v="no"/>
+    <tag k="addr:street" v="Karlstraße"/>
+    <tag k="addr:postcode" v="88045"/>
+    <tag k="fixme" v="Keine Ahnung was das ist. Massagesalon?"/>
+    <tag k="name" v="Natural Touch"/>
+    <tag k="addr:housenumber" v="17"/>
+    <tag k="addr:city" v="Friedrichshafen"/>
+    <tag k="shop" v="massage"/>
+  </node>
+</old>
+<new>
+  <node id="2428180099" lat="47.6505193" lon="9.4783183" version="7" timestamp="2022-06-24T13:31:34Z" changeset="122803735" uid="257555" user="rene78">
+    <tag k="addr:city" v="Friedrichshafen"/>
+    <tag k="addr:housenumber" v="17"/>
+    <tag k="addr:postcode" v="88045"/>
+    <tag k="addr:street" v="Karlstraße"/>
+    <tag k="beauty" v="permanent_makeup;cosmetics"/>
+    <tag k="contact:mobile" v="+4915164764760"/>
+    <tag k="email" v="janka.g@gmx.net"/>
+    <tag k="name" v="Simplicity by Janine"/>
+    <tag k="opening_hours" v="&quot;nach Vereinbarung&quot;"/>
+    <tag k="operator" v="Janine Föhr"/>
+    <tag k="shop" v="beauty"/>
+    <tag k="website" v="http://www.simplicitybyjanine.de/"/>
+    <tag k="wheelchair" v="no"/>
+  </node>
+</new>
+</action>
+<action type="modify">
+<old>
+  <node id="3611264529" lat="47.6506943" lon="9.4808659" version="10" timestamp="2021-12-15T00:11:39Z" changeset="114943513" uid="257555" user="rene78">
+    <tag k="name" v="orsay"/>
+    <tag k="wheelchair:description" v="keine ausgewiesenen behindertengerechten Umkleidekabinen"/>
+    <tag k="wheelchair" v="yes"/>
+    <tag k="shop" v="clothes"/>
+    <tag k="addr:city" v="Friedrichshafen"/>
+    <tag k="addr:country" v="DE"/>
+    <tag k="addr:housenumber" v="17"/>
+    <tag k="addr:postcode" v="88045"/>
+    <tag k="addr:street" v="Wilhelmstraße"/>
+    <tag k="brand" v="orsay"/>
+    <tag k="brand:wikidata" v="Q883245"/>
+    <tag k="brand:wikipedia" v="de:Orsay (Modeunternehmen)"/>
+    <tag k="contact:phone" v="+49 7541 391713"/>
+    <tag k="contact:website" v="http://world.orsay.com/"/>
+    <tag k="opening_hours" v="Mo-We 09:30-19:00; Th-Fr 09:30-20:00; Sa 09:30-18:30; PH off"/>
+    <tag k="toilets:wheelchair" v="no"/>
+  </node>
+</old>
+<new>
+  <node id="3611264529" lat="47.6506943" lon="9.4808659" version="12" timestamp="2022-06-24T11:57:19Z" changeset="122800198" uid="257555" user="rene78">
+    <tag k="addr:city" v="Friedrichshafen"/>
+    <tag k="addr:country" v="DE"/>
+    <tag k="addr:housenumber" v="17"/>
+    <tag k="addr:postcode" v="88045"/>
+    <tag k="addr:street" v="Wilhelmstraße"/>
+    <tag k="brand" v="orsay"/>
+    <tag k="brand:wikidata" v="Q883245"/>
+    <tag k="brand:wikipedia" v="de:Orsay (Modeunternehmen)"/>
+    <tag k="contact:phone" v="+49 7541 391713"/>
+    <tag k="contact:website" v="http://world.orsay.com/"/>
+    <tag k="disused:shop" v="clothes"/>
+    <tag k="name" v="orsay"/>
+    <tag k="note" v="Hat geschlossen seit 2022-07-01"/>
+    <tag k="opening_hours" v="Mo-We 09:30-19:00; Th-Fr 09:30-20:00; Sa 09:30-18:30; PH off"/>
+    <tag k="toilets:wheelchair" v="no"/>
+    <tag k="wheelchair" v="yes"/>
+    <tag k="wheelchair:description" v="keine ausgewiesenen behindertengerechten Umkleidekabinen"/>
+  </node>
+</new>
+</action>
+<action type="modify">
+<old>
+  <node id="3796637528" lat="47.6518755" lon="9.4788388" version="6" timestamp="2019-06-30T15:41:14Z" changeset="71759167" uid="257555" user="rene78">
+    <tag k="name" v="Hallhuber"/>
+    <tag k="wheelchair" v="limited"/>
+    <tag k="shop" v="clothes"/>
+    <tag k="addr:city" v="Friedrichshafen"/>
+    <tag k="addr:country" v="DE"/>
+    <tag k="addr:housenumber" v="81"/>
+    <tag k="addr:postcode" v="88045"/>
+    <tag k="addr:street" v="Friedrichstraße"/>
+    <tag k="brand" v="Hallhuber"/>
+    <tag k="brand:wikidata" v="Q1571714"/>
+    <tag k="brand:wikipedia" v="de:Hallhuber (Bekleidungshaus)"/>
+    <tag k="clothes" v="women"/>
+    <tag k="opening_hours" v="09:30-18:30; Sa 09:30-17:00; Su,PH off"/>
+    <tag k="phone" v="+49 7541 3748875"/>
+    <tag k="start_date" v="14.03.2019"/>
+    <tag k="website" v="https://www.hallhuber.com/de/"/>
+  </node>
+</old>
+<new>
+  <node id="3796637528" lat="47.6518755" lon="9.4788388" version="8" timestamp="2022-06-24T11:57:19Z" changeset="122800198" uid="257555" user="rene78">
+    <tag k="addr:city" v="Friedrichshafen"/>
+    <tag k="addr:country" v="DE"/>
+    <tag k="addr:housenumber" v="81"/>
+    <tag k="addr:postcode" v="88045"/>
+    <tag k="addr:street" v="Friedrichstraße"/>
+    <tag k="brand" v="Hallhuber"/>
+    <tag k="brand:wikidata" v="Q1571714"/>
+    <tag k="brand:wikipedia" v="de:Hallhuber (Bekleidungshaus)"/>
+    <tag k="clothes" v="women"/>
+    <tag k="disused:shop" v="clothes"/>
+    <tag k="name" v="Hallhuber"/>
+    <tag k="opening_hours" v="09:30-18:30; Sa 09:30-17:00; Su,PH off"/>
+    <tag k="phone" v="+49 7541 3748875"/>
+    <tag k="start_date" v="14.03.2019"/>
+    <tag k="website" v="https://www.hallhuber.com/de/"/>
+    <tag k="wheelchair" v="limited"/>
+  </node>
+</new>
+</action>
+<action type="modify">
+<old>
+  <node id="3835594967" lat="47.6516663" lon="9.4774224" version="5" timestamp="2021-12-28T21:54:20Z" changeset="115490314" uid="257555" user="rene78">
+    <tag k="name" v="dizi"/>
+    <tag k="addr:city" v="Friedrichshafen"/>
+    <tag k="addr:housenumber" v="1"/>
+    <tag k="addr:postcode" v="88045"/>
+    <tag k="addr:street" v="Karlstraße"/>
+    <tag k="contact:instagram" v="https://www.instagram.com/dizi_mode/"/>
+    <tag k="email" v="kontakt@boutique-pinos.de"/>
+    <tag k="opening_hours" v="Mo-Fr 10:00-18:00; Sa 10:00-16:00; Su,PH off"/>
+    <tag k="operator" v="Patrizia Pinos-Schwarzott"/>
+    <tag k="phone" v="+49 7541 25276"/>
+    <tag k="shop" v="clothes"/>
+    <tag k="website" v="https://dizimode.de/"/>
+    <tag k="wheelchair" v="limited"/>
+  </node>
+</old>
+<new>
+  <node id="3835594967" lat="47.6516663" lon="9.4774224" version="6" timestamp="2022-06-18T11:43:14Z" changeset="122543467" uid="257555" user="rene78">
+    <tag k="addr:city" v="Friedrichshafen"/>
+    <tag k="addr:housenumber" v="1"/>
+    <tag k="addr:postcode" v="88045"/>
+    <tag k="addr:street" v="Karlstraße"/>
+    <tag k="contact:instagram" v="https://www.instagram.com/dizi_mode/"/>
+    <tag k="email" v="kontakt@boutique-pinos.de"/>
+    <tag k="name" v="DIZI Boutique Pinos"/>
+    <tag k="opening_hours" v="Mo-Fr 10:00-18:00; Sa 10:00-16:00; Su,PH off"/>
+    <tag k="operator" v="Patrizia Pinos-Schwarzott"/>
+    <tag k="phone" v="+49 7541 25276"/>
+    <tag k="shop" v="clothes"/>
+    <tag k="website" v="https://dizimode.de/"/>
+    <tag k="wheelchair" v="limited"/>
+  </node>
+</new>
+</action>
+<action type="modify">
+<old>
+  <node id="4272229178" lat="47.6530305" lon="9.4742010" version="2" timestamp="2016-06-29T21:45:08Z" changeset="40377700" uid="257555" user="rene78">
+    <tag k="amenity" v="luggage_locker"/>
+  </node>
+</old>
+<new>
+  <node id="4272229178" lat="47.6529935" lon="9.4742035" version="3" timestamp="2024-02-12T12:16:12Z" changeset="122800892" uid="257555" user="rene78">
+    <tag k="amenity" v="luggage_locker"/>
+  </node>
+</new>
+</action>
+<action type="modify">
+<old>
+  <node id="4802419050" lat="47.6530057" lon="9.4728883" version="5" timestamp="2020-10-24T11:14:55Z" changeset="92985163" uid="257555" user="rene78">
+    <tag k="website" v="https://www.bahnhofsmission.de/index.php?id=99&amp;woher=&amp;bm=20"/>
+    <tag k="social_facility" v="outreach"/>
+    <tag k="phone" v="+49 7541 21976"/>
+    <tag k="disused:amenity" v="social_facility"/>
+    <tag k="opening_hours" v="Mo-Fr 09:00-18:00; Sa 09:00-12:00; Su,PH off"/>
+    <tag k="note" v="Die Bahnhofsmission Friedrichshafen ist bis auf Weiteres geschlossen."/>
+    <tag k="social_facility:for" v="underprivileged"/>
+    <tag k="email" v="friedrichshafen@bahnhofsmission.de"/>
+    <tag k="name" v="Bahnhofsmission"/>
+  </node>
+</old>
+<new>
+  <node id="4802419050" lat="47.6530057" lon="9.4728883" version="6" timestamp="2024-02-12T12:16:12Z" changeset="122800892" uid="257555" user="rene78">
+    <tag k="amenity" v="social_facility"/>
+    <tag k="brand" v="Bahnhofsmission"/>
+    <tag k="brand:wikidata" v="Q801713"/>
+    <tag k="email" v="friedrichshafen@bahnhofsmission.de"/>
+    <tag k="fixme" v="Die Bahnhofsmission Friedrichshafen hat ende Juni 2022 neueröffnet. Bin mir aber nicht sicher, ob hier oder im östlichen Bereich des Bahnhofs nahe der Polizeistation."/>
+    <tag k="name" v="Bahnhofsmission"/>
+    <tag k="opening_hours" v="Mo-Fr 09:00-18:00; Sa 09:00-12:00; Su,PH off"/>
+    <tag k="phone" v="+49 7541 21976"/>
+    <tag k="social_facility" v="outreach"/>
+    <tag k="social_facility:for" v="homeless;underprivileged"/>
+    <tag k="website" v="https://www.bahnhofsmission.de/index.php?id=99&amp;woher=&amp;bm=20"/>
+  </node>
+</new>
+</action>
+<action type="modify">
+<old>
+  <node id="4852612818" lat="47.6525494" lon="9.4789354" version="7" timestamp="2021-02-26T22:50:55Z" changeset="100077867" uid="257555" user="rene78">
+    <tag k="start_date" v="2017-05-01"/>
+    <tag k="contact:email" v="info@mut-fn.de"/>
+    <tag k="contact:facebook" v="https://www.facebook.com/mutfriedrichshafen/"/>
+    <tag k="operator" v="Nazlı Yucad"/>
+    <tag k="contact:phone" v="+49 7541 3760366"/>
+    <tag k="description" v="Laden, der Geschenke, Karten, Kaftans, Babysachen, Deko und Kleinigkeiten verkauft."/>
+    <tag k="disused:amenity" v="cafe"/>
+    <tag k="disused:shop" v="interior_decoration"/>
+    <tag k="name" v="mut - Kostbares aus Nah und Fern"/>
+    <tag k="note" v="In Wilhelmstraße 9 umgezogen"/>
+    <tag k="opening_hours" v="Mo,Tu,Th,Fr 10:00-19:00; Sa 10:00-14:00"/>
+  </node>
+</old>
+<new>
+  <node id="4852612818" lat="47.6525494" lon="9.4789354" version="8" timestamp="2022-06-18T12:17:18Z" changeset="122544637" uid="257555" user="rene78">
+    <tag k="amenity" v="cafe"/>
+    <tag k="contact:instagram" v="https://www.instagram.com/thesecretcafefn/"/>
+    <tag k="contact:phone" v="+4975419555606"/>
+    <tag k="name" v="The Secret Café"/>
+    <tag k="opening_hours" v="Mo-Fr 09:00-18:00; Sa 10:00-18:00"/>
+    <tag k="operator" v="Maria Arnaldos"/>
+    <!-- <tag k="start_date" v="2022-06-07"/> -->
+    <tag k="website" v="https://linktr.ee/thesecretcafe"/>
+  </node>
+</new>
+</action>
+<action type="modify">
+<old>
+  <node id="9374440942" lat="47.6504568" lon="9.4784087" version="3" timestamp="2021-12-30T12:53:17Z" changeset="115564110" uid="257555" user="rene78">
+    <tag k="description" v="Wird wohl mal die Sonnenbrillenabteilung von &quot;Studio Eye Wear&quot;. Momentan (2021-12) Corona Testzentrum"/>
+    <tag k="disused:shop" v="optician"/>
+    <tag k="wheelchair" v="no"/>
+    <tag k="addr:city" v="Friedrichshafen"/>
+    <tag k="addr:housenumber" v="17"/>
+    <tag k="addr:postcode" v="88045"/>
+    <tag k="addr:street" v="Karlstraße"/>
+    <tag k="alt_name" v="STUDIO EYE WEAR SUN"/>
+    <tag k="email" v="info@studioeyewear.de"/>
+    <tag k="facebook" v="https://de-de.facebook.com/seeeyewearfn/"/>
+    <tag k="name" v="STUDIO EYE WEAR"/>
+    <tag k="old_name" v="Brillen Maurer"/>
+    <tag k="opening_date" v="2022"/>
+    <tag k="opening_hours" v="Tu-Sa 12:00-18:00"/>
+    <tag k="operator" v="Renate Rauschendorfer-Lux"/>
+    <tag k="phone" v="+49 7541 22109"/>
+    <tag k="website" v="https://www.studioeyewear.de/"/>
+  </node>
+</old>
+<new>
+  <node id="9374440942" lat="47.6504567" lon="9.4783760" version="4" timestamp="2022-06-24T13:31:34Z" changeset="122803735" uid="257555" user="rene78">
+    <tag k="addr:city" v="Friedrichshafen"/>
+    <tag k="addr:housenumber" v="17"/>
+    <tag k="addr:postcode" v="88045"/>
+    <tag k="addr:street" v="Karlstraße"/>
+    <tag k="alt_name" v="STUDIO EYE WEAR SUN"/>
+    <tag k="description" v="Sonnenbrillenabteilung von &quot;Studio Eye Wear&quot;"/>
+    <tag k="email" v="info@studioeyewear.de"/>
+    <tag k="facebook" v="https://de-de.facebook.com/seeeyewearfn/"/>
+    <tag k="name" v="STUDIO EYE WEAR"/>
+    <tag k="old_name" v="Brillen Maurer"/>
+    <tag k="opening_date" v="2022"/>
+    <tag k="opening_hours" v="Tu-Sa 12:00-18:00"/>
+    <tag k="operator" v="Renate Rauschendorfer-Lux"/>
+    <tag k="phone" v="+49 7541 22109"/>
+    <tag k="shop" v="optician"/>
+    <tag k="website" v="https://www.studioeyewear.de/"/>
+    <tag k="wheelchair" v="no"/>
+  </node>
+</new>
+</action>
+<action type="modify">
+<old>
+  <node id="9379214001" lat="47.6504572" lon="9.4783798" version="1" timestamp="2021-12-30T12:53:17Z" changeset="115564110" uid="257555" user="rene78">
+    <tag k="website" v="https://testkalender.de/test-und-see"/>
+    <tag k="healthcare" v="centre"/>
+    <tag k="contact:mobile" v="+49 151 11350030"/>
+    <tag k="description" v="Angebotene Tests:&#x0a;Antigentest Schnelltest: Kostenloser Bürgertest – Corona Test (15-30 Min)"/>
+    <tag k="email" v="testandseebodensee@gmail.com"/>
+    <tag k="healthcare:speciality" v="covid19;testing"/>
+    <tag k="name" v="Test &amp; See Testzentrum"/>
+    <tag k="opening_hours" v="Mo 09:00-15:00; Tu-Fr 09:00-19:00; Sa 09:00-18:00; Su 09:00-17:00"/>
+    <tag k="operator" v="Dominik Kleine"/>
+  </node>
+</old>
+<new>
+  <node id="9379214001" lat="47.6504628" lon="9.4783964" version="2" timestamp="2022-06-24T13:31:34Z" changeset="122803735" uid="257555" user="rene78">
+    <tag k="contact:mobile" v="+49 151 11350030"/>
+    <tag k="description" v="Angebotene Tests:&#x0a;Antigentest Schnelltest: Kostenloser Bürgertest – Corona Test (15-30 Min)"/>
+    <tag k="disused:healthcare" v="centre"/>
+    <tag k="email" v="testandseebodensee@gmail.com"/>
+    <tag k="healthcare:speciality" v="covid19;testing"/>
+    <tag k="name" v="Test &amp; See Testzentrum"/>
+    <tag k="opening_hours" v="Mo 09:00-15:00; Tu-Fr 09:00-19:00; Sa 09:00-18:00; Su 09:00-17:00"/>
+    <tag k="operator" v="Dominik Kleine"/>
+    <tag k="website" v="https://testkalender.de/test-und-see"/>
+  </node>
+</new>
+</action>
+<action type="create">
+  <node id="9844010235" lat="47.6530000" lon="9.4744499" version="1" timestamp="2022-06-24T12:16:12Z" changeset="122800892" uid="257555" user="rene78"/>
+</action>
+<action type="create">
+  <way id="1072310203" version="1" timestamp="2022-06-22T13:47:54Z" changeset="122713614" uid="257555" user="rene78">
+    <bounds minlat="47.6700922" minlon="9.4930957" maxlat="47.6701029" maxlon="9.4942065"/>
+    <nd ref="9838834424" lat="47.6700922" lon="9.4942065"/>
+    <nd ref="7963768089" lat="47.6701004" lon="9.4932077"/>
+    <nd ref="9838834425" lat="47.6701029" lon="9.4930957"/>
+    <tag k="access" v="destination"/>
+    <tag k="highway" v="service"/>
+    <tag k="service" v="driveway"/>
+  </way>
+</action>
+<action type="delete">
+<old>
+  <node id="1111111111" lat="47.65" lon="9.47" version="1" timestamp="2013-07-01T09:01:11Z" changeset="496" uid="42" user="thisIsASuperLongUserName">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="foobar"/>
+    <tag k="description" v="Only a test"/>
+    <tag k="foo" v="bar"/>
+    <tag k="website" v="www.osm.org"/>
+    <tag k="source:url" v="www.osm.org"/>
+    <tag k="wikidata" v="Q1234567"/>
+    <tag k="brand:wikidata" v="Q1958759"/>
+    <tag k="brand:wikipedia" v="en:Müller (German trade company)"/>
+    <tag k="wikipedia" v="en:Beijing–Guangzhou high-speed railway"/>
+  </node>
+</old>
+<new>
+  <node id="1111111111" visible="false" version="2" timestamp="2025-04-05T19:02:11Z" changeset="493" uid="47" user="CleanerBot"/>
+</new>
+</action>
+
+<action type="delete">
+  <old>
+    <way id="1111111112" version="5" timestamp="2023-06-15T10:00:00Z" changeset="12345678" uid="555" user="LinearMapper">
+      <!-- The bounding box of the geometry -->
+      <bounds minlat="52.5162" minlon="13.3777" maxlat="52.5200" maxlon="13.3800"/>
+      
+      <!-- Start Coordinate -->
+      <nd ref="9876543210" lat="47.651" lon="9.471"/>
+      
+      <!-- End Coordinate -->
+      <nd ref="9876543211" lat="47.647" lon="9.473"/>
+      
+      <tag k="highway" v="footway"/>
+      <tag k="surface" v="asphalt"/>
+    </way>
+  </old>
+  <new>
+    <way id="1111111112" visible="false" version="6" timestamp="2025-01-08T18:45:00Z" changeset="493" uid="777" user="CleanerBot"/>
+  </new>
+</action>
+
+<action type="modify">
+<old>
+  <way id="437103103" version="5" timestamp="2021-12-28T11:56:32Z" changeset="115467128" uid="15748" user="bigbug21">
+    <bounds minlat="47.6529481" minlon="9.4706017" maxlat="47.6532025" maxlon="9.4754633"/>
+    <nd ref="4349314500" lat="47.6532025" lon="9.4706024"/>
+    <nd ref="4349314499" lat="47.6531934" lon="9.4710155"/>
+    <nd ref="9349387638" lat="47.6531387" lon="9.4721361"/>
+    <nd ref="4349314495" lat="47.6530972" lon="9.4729869"/>
+    <nd ref="4349314493" lat="47.6530303" lon="9.4743743"/>
+    <nd ref="4349314491" lat="47.6529852" lon="9.4752889"/>
+    <nd ref="4349314490" lat="47.6529775" lon="9.4754633"/>
+    <nd ref="4349314488" lat="47.6529481" lon="9.4754599"/>
+    <nd ref="7728026949" lat="47.6529657" lon="9.4749543"/>
+    <nd ref="7728026950" lat="47.6529685" lon="9.4748711"/>
+    <nd ref="7728026951" lat="47.6529714" lon="9.4747887"/>
+    <nd ref="7723448571" lat="47.6529729" lon="9.4747349"/>
+    <nd ref="4349314489" lat="47.6529739" lon="9.4747223"/>
+    <nd ref="4349314492" lat="47.6529874" lon="9.4747243"/>
+    <nd ref="7723448570" lat="47.6530225" lon="9.4739570"/>
+    <nd ref="7723448569" lat="47.6530265" lon="9.4738814"/>
+    <nd ref="7723448568" lat="47.6530304" lon="9.4737966"/>
+    <nd ref="4349314494" lat="47.6530677" lon="9.4729943"/>
+    <nd ref="4349314496" lat="47.6531130" lon="9.4718369"/>
+    <nd ref="4349314497" lat="47.6531500" lon="9.4710014"/>
+    <nd ref="4349314498" lat="47.6531690" lon="9.4706017"/>
+    <nd ref="4349314500" lat="47.6532025" lon="9.4706024"/>
+    <tag k="access" v="no"/>
+    <tag k="area" v="yes"/>
+    <tag k="construction:public_transport" v="platform"/>
+    <tag k="construction:railway" v="platform"/>
+    <tag k="level" v="0"/>
+    <tag k="note" v="Aufgrund von Bahnsteig-Bauarbeiten gesperrt."/>
+    <tag k="ref" v="1"/>
+    <tag k="ref:IFOPT" v="de:08435:44002:2:1"/>
+    <tag k="ref:IFOPT:description" v="Gleis 1"/>
+    <tag k="tactile_paving" v="no"/>
+    <tag k="wheelchair" v="limited"/>
+    <tag k="width" v="2"/>
+  </way>
+</old>
+<new>
+  <way id="437103103" version="6" timestamp="2024-04-15T12:16:12Z" changeset="122800892" uid="257555" user="rene78">
+    <bounds minlat="47.6529481" minlon="9.4706017" maxlat="47.6532025" maxlon="9.4754633"/>
+    <nd ref="4349314500" lat="47.6532025" lon="9.4706024"/>
+    <nd ref="4349314499" lat="47.6531934" lon="9.4710155"/>
+    <nd ref="9349387638" lat="47.6531387" lon="9.4721361"/>
+    <nd ref="4349314495" lat="47.6530972" lon="9.4729869"/>
+    <nd ref="4349314493" lat="47.6530303" lon="9.4743743"/>
+    <nd ref="4349314491" lat="47.6529852" lon="9.4752889"/>
+    <nd ref="4349314490" lat="47.654" lon="9.475"/>
+    <nd ref="4349314488" lat="47.6529481" lon="9.4754599"/>
+    <nd ref="7728026949" lat="47.6529657" lon="9.4749543"/>
+    <nd ref="7728026950" lat="47.6529685" lon="9.4748711"/>
+    <nd ref="7728026951" lat="47.6529714" lon="9.4747887"/>
+    <nd ref="7723448571" lat="47.6529729" lon="9.4747349"/>
+    <nd ref="4349314489" lat="47.6529739" lon="9.4747223"/>
+    <nd ref="4349314492" lat="47.6529874" lon="9.4747243"/>
+    <nd ref="9844010235" lat="47.6530000" lon="9.4744499"/>
+    <nd ref="7723448570" lat="47.6530225" lon="9.4739570"/>
+    <nd ref="7723448569" lat="47.6530265" lon="9.4738814"/>
+    <nd ref="7723448568" lat="47.6530304" lon="9.4737966"/>
+    <nd ref="4349314494" lat="47.6530677" lon="9.4729943"/>
+    <nd ref="4349314496" lat="47.6531130" lon="9.4718369"/>
+    <nd ref="4349314497" lat="47.6531500" lon="9.4710014"/>
+    <nd ref="4349314498" lat="47.6531690" lon="9.4706017"/>
+    <nd ref="4349314500" lat="47.6532025" lon="9.4706024"/>
+    <tag k="access" v="no"/>
+    <tag k="area" v="yes"/>
+    <tag k="construction:public_transport" v="platform"/>
+    <tag k="construction:railway" v="platform"/>
+    <tag k="level" v="0"/>
+    <tag k="note" v="Aufgrund von Bahnsteig-Bauarbeiten gesperrt."/>
+    <tag k="ref" v="1"/>
+    <tag k="ref:IFOPT" v="de:08435:44002:2:1"/>
+    <tag k="ref:IFOPT:description" v="Gleis 1"/>
+    <tag k="tactile_paving" v="no"/>
+    <tag k="wheelchair" v="limited"/>
+    <tag k="width" v="2"/>
+  </way>
+</new>
+</action>
+<action type="modify">
+<old>
+  <way id="2222222222" version="1" timestamp="2021-04-15T21:20:54Z" changeset="103017971" uid="257555" user="rene78">
+    <bounds minlat="47.656" minlon="9.477" maxlat="47.6568163" maxlon="9.4785357"/>
+    <nd ref="8633427174" lat="47.6568163" lon="9.4785357"/>
+    <nd ref="5851708120" lat="47.656" lon="9.477"/>
+    <tag k="highway" v="service"/>
+    <tag k="service" v="driveway"/>
+  </way>
+</old>
+<new>
+  <way id="2222222222" version="2" timestamp="2025-04-01T21:20:54Z" changeset="103017971" uid="257555" user="rene78">
+    <bounds minlat="47.6566572" minlon="9.4775609" maxlat="47.6568163" maxlon="9.4785357"/>
+    <nd ref="8633427174" lat="47.6568163" lon="9.4785357"/>
+    <nd ref="5851708120" lat="47.6566572" lon="9.4775609"/>
+    <tag k="highway" v="service"/>
+    <tag k="service" v="driveway"/>
+    <tag k="name" v="Pennyroad Lane"/>
+  </way>
+</new>
+</action>
+<action type="create">
+  <way id="1072310202" version="1" timestamp="2022-06-22T13:47:54Z" changeset="122713614" uid="257555" user="rene78">
+    <bounds minlat="47.6692435" minlon="9.4937877" maxlat="47.6693701" maxlon="9.4941668"/>
+    <nd ref="9838811711" lat="47.6693701" lon="9.4938169"/>
+    <nd ref="9838811712" lat="47.6693517" lon="9.4938151"/>
+    <nd ref="9838811713" lat="47.6693466" lon="9.4938004"/>
+    <nd ref="9838811714" lat="47.6693406" lon="9.4937909"/>
+    <nd ref="9838811715" lat="47.6693303" lon="9.4937877"/>
+    <nd ref="9838811716" lat="47.6693212" lon="9.4937909"/>
+    <nd ref="9838834417" lat="47.6693152" lon="9.4938030"/>
+    <nd ref="9838834418" lat="47.6693109" lon="9.4938119"/>
+    <nd ref="5922176637" lat="47.6692559" lon="9.4938119"/>
+    <nd ref="9838834419" lat="47.6692529" lon="9.4939701"/>
+    <nd ref="9838834420" lat="47.6692448" lon="9.4939701"/>
+    <nd ref="9838834421" lat="47.6692435" lon="9.4940320"/>
+    <nd ref="9838834422" lat="47.6692688" lon="9.4940339"/>
+    <nd ref="9838834423" lat="47.6692650" lon="9.4941596"/>
+    <nd ref="2045976742" lat="47.6693615" lon="9.4941668"/>
+    <nd ref="9838811711" lat="47.6693701" lon="9.4938169"/>
+    <tag k="addr:city" v="Friedrichshafen"/>
+    <tag k="addr:housenumber" v="9/1"/>
+    <tag k="addr:postcode" v="88046"/>
+    <tag k="addr:street" v="Gutenbergstraße"/>
+    <tag k="building" v="yes"/>
+  </way>
+</action>
+<action type="modify">
+<old>
+  <way id="290918616" version="4" timestamp="2024-07-15T11:13:27Z" changeset="153966862" uid="1213571" user="mcliquid">
+    <bounds minlat="47.6561349" minlon="9.5043089" maxlat="47.6562462" maxlon="9.5044941"/>
+    <nd ref="2944071770" lat="47.6561876" lon="9.5044805"/>
+    <nd ref="2944071769" lat="47.6561876" lon="9.5044360"/>
+    <nd ref="2944071765" lat="47.6561349" lon="9.5044360"/>
+    <nd ref="2944071766" lat="47.6561350" lon="9.5043089"/>
+    <nd ref="2944071777" lat="47.6562462" lon="9.5043090"/>
+    <nd ref="2944071778" lat="47.6562462" lon="9.5044383"/>
+    <nd ref="2944071776" lat="47.6562055" lon="9.5044383"/>
+    <nd ref="2944071775" lat="47.6562054" lon="9.5044941"/>
+    <nd ref="3095173517" lat="47.6561951" lon="9.5044941"/>
+    <nd ref="2944071772" lat="47.6561932" lon="9.5044941"/>
+    <nd ref="2944071771" lat="47.6561932" lon="9.5044805"/>
+    <nd ref="2944071770" lat="47.6561876" lon="9.5044805"/>
+    <tag k="amenity" v="kindergarten"/>
+    <tag k="building" v="kindergarten"/>
+  </way>
+</old>
+<new>
+  <way id="290918616" version="5" timestamp="2024-07-29T13:56:35Z" changeset="154564334" uid="1213571" user="mcliquid">
+    <bounds minlat="47.6561349" minlon="9.5043089" maxlat="47.6562462" maxlon="9.5044941"/>
+    <nd ref="2944071770" lat="47.6561876" lon="9.5044805"/>
+    <nd ref="2944071769" lat="47.6561876" lon="9.5044360"/>
+    <nd ref="2944071765" lat="47.6561349" lon="9.5044360"/>
+    <nd ref="2944071766" lat="47.6561350" lon="9.5043089"/>
+    <nd ref="2944071777" lat="47.6562462" lon="9.5043090"/>
+    <nd ref="2944071778" lat="47.6562462" lon="9.5044383"/>
+    <nd ref="2944071776" lat="47.6562055" lon="9.5044383"/>
+    <nd ref="2944071775" lat="47.6562054" lon="9.5044941"/>
+    <nd ref="3095173517" lat="47.6561951" lon="9.5044941"/>
+    <nd ref="2944071772" lat="47.6561932" lon="9.5044941"/>
+    <nd ref="2944071771" lat="47.6561932" lon="9.5044805"/>
+    <nd ref="2944071770" lat="47.6561876" lon="9.5044805"/>
+    <tag k="building" v="kindergarten"/>
+  </way>
+</new>
+</action>
+<action type="modify">
+<old>
+  <way id="290918617" version="6" timestamp="2024-07-15T11:13:27Z" changeset="153966862" uid="1213571" user="mcliquid">
+    <bounds minlat="47.6561950" minlon="9.5044941" maxlat="47.6562776" maxlon="9.5047565"/>
+    <nd ref="3095173517" lat="47.6561951" lon="9.5044941"/>
+    <nd ref="2944071775" lat="47.6562054" lon="9.5044941"/>
+    <nd ref="2944071782" lat="47.6562776" lon="9.5044942"/>
+    <nd ref="2944071781" lat="47.6562775" lon="9.5047565"/>
+    <nd ref="2944071773" lat="47.6561950" lon="9.5047564"/>
+    <nd ref="2944071774" lat="47.6561951" lon="9.5046029"/>
+    <nd ref="3095173517" lat="47.6561951" lon="9.5044941"/>
+    <tag k="amenity" v="kindergarten"/>
+    <tag k="addr:city" v="Friedrichshafen"/>
+    <tag k="addr:country" v="DE"/>
+    <tag k="addr:housenumber" v="66"/>
+    <tag k="addr:postcode" v="88046"/>
+    <tag k="addr:street" v="Länderöschstraße"/>
+    <tag k="building" v="kindergarten"/>
+  </way>
+</old>
+<new>
+  <way id="290918617" version="7" timestamp="2024-07-29T13:56:35Z" changeset="154564334" uid="1213571" user="mcliquid">
+    <bounds minlat="47.6561950" minlon="9.5044941" maxlat="47.6562776" maxlon="9.5047565"/>
+    <nd ref="3095173517" lat="47.6561951" lon="9.5044941"/>
+    <nd ref="2944071775" lat="47.6562054" lon="9.5044941"/>
+    <nd ref="2944071782" lat="47.6562776" lon="9.5044942"/>
+    <nd ref="2944071781" lat="47.6562775" lon="9.5047565"/>
+    <nd ref="2944071773" lat="47.6561950" lon="9.5047564"/>
+    <nd ref="2944071774" lat="47.6561951" lon="9.5046029"/>
+    <nd ref="3095173517" lat="47.6561951" lon="9.5044941"/>
+    <tag k="addr:city" v="Friedrichshafen"/>
+    <tag k="addr:country" v="DE"/>
+    <tag k="addr:housenumber" v="66"/>
+    <tag k="addr:postcode" v="88046"/>
+    <tag k="addr:street" v="Länderöschstraße"/>
+    <tag k="building" v="kindergarten"/>
+  </way>
+</new>
+</action>
+<action type="modify">
+<old>
+  <way id="332742460" version="3" timestamp="2015-09-24T18:09:30Z" changeset="34231076" uid="7622" user="user_7622">
+    <bounds minlat="47.6556337" minlon="9.5039139" maxlat="47.6569488" maxlon="9.5053414"/>
+    <nd ref="3398763571" lat="47.6559249" lon="9.5043791"/>
+    <nd ref="3398767073" lat="47.6560184" lon="9.5042432"/>
+    <nd ref="3398767074" lat="47.6561067" lon="9.5041133"/>
+    <nd ref="3398767075" lat="47.6561836" lon="9.5040158"/>
+    <nd ref="3398767076" lat="47.6562825" lon="9.5039441"/>
+    <nd ref="3398767077" lat="47.6563700" lon="9.5039195"/>
+    <nd ref="3398767079" lat="47.6564560" lon="9.5039139"/>
+    <nd ref="3398767081" lat="47.6566024" lon="9.5039206"/>
+    <nd ref="3398767084" lat="47.6567790" lon="9.5039262"/>
+    <nd ref="3398767087" lat="47.6569412" lon="9.5039419"/>
+    <nd ref="3398767088" lat="47.6569488" lon="9.5039676"/>
+    <nd ref="3398767086" lat="47.6568801" lon="9.5040214"/>
+    <nd ref="3398767085" lat="47.6567843" lon="9.5041166"/>
+    <nd ref="3398767083" lat="47.6567133" lon="9.5041939"/>
+    <nd ref="3398767082" lat="47.6566341" lon="9.5042970"/>
+    <nd ref="3757811888" lat="47.6565607" lon="9.5043983"/>
+    <nd ref="3398767080" lat="47.6565473" lon="9.5044169"/>
+    <nd ref="3398767078" lat="47.6564251" lon="9.5045905"/>
+    <nd ref="3398763578" lat="47.6563188" lon="9.5047589"/>
+    <nd ref="3398763577" lat="47.6562260" lon="9.5049101"/>
+    <nd ref="3757811885" lat="47.6562154" lon="9.5049274"/>
+    <nd ref="3398763576" lat="47.6561951" lon="9.5049605"/>
+    <nd ref="3398763575" lat="47.6561309" lon="9.5050670"/>
+    <nd ref="3398763574" lat="47.6560759" lon="9.5051644"/>
+    <nd ref="3398763573" lat="47.6560155" lon="9.5052697"/>
+    <nd ref="3398763572" lat="47.6559770" lon="9.5053414"/>
+    <nd ref="3398763568" lat="47.6556337" lon="9.5049169"/>
+    <nd ref="3398763569" lat="47.6557544" lon="9.5046301"/>
+    <nd ref="3398763570" lat="47.6558819" lon="9.5044464"/>
+    <nd ref="3398763571" lat="47.6559249" lon="9.5043791"/>
+    <tag k="barrier" v="fence"/>
+  </way>
+</old>
+<new>
+  <way id="332742460" version="4" timestamp="2024-07-29T13:57:05Z" changeset="154564373" uid="1213571" user="mcliquid">
+    <bounds minlat="47.6556337" minlon="9.5039139" maxlat="47.6569488" maxlon="9.5053414"/>
+    <nd ref="3398763571" lat="47.6559249" lon="9.5043791"/>
+    <nd ref="3398767073" lat="47.6560184" lon="9.5042432"/>
+    <nd ref="3398767074" lat="47.6561067" lon="9.5041133"/>
+    <nd ref="3398767075" lat="47.6561836" lon="9.5040158"/>
+    <nd ref="3398767076" lat="47.6562825" lon="9.5039441"/>
+    <nd ref="3398767077" lat="47.6563700" lon="9.5039195"/>
+    <nd ref="3398767079" lat="47.6564560" lon="9.5039139"/>
+    <nd ref="3398767081" lat="47.6566024" lon="9.5039206"/>
+    <nd ref="3398767084" lat="47.6567790" lon="9.5039262"/>
+    <nd ref="3398767087" lat="47.6569412" lon="9.5039419"/>
+    <nd ref="3398767088" lat="47.6569488" lon="9.5039676"/>
+    <nd ref="3398767086" lat="47.6568801" lon="9.5040214"/>
+    <nd ref="3398767085" lat="47.6567843" lon="9.5041166"/>
+    <nd ref="3398767083" lat="47.6567133" lon="9.5041939"/>
+    <nd ref="3398767082" lat="47.6566341" lon="9.5042970"/>
+    <nd ref="3757811888" lat="47.6565607" lon="9.5043983"/>
+    <nd ref="3398767080" lat="47.6565473" lon="9.5044169"/>
+    <nd ref="3398767078" lat="47.6564251" lon="9.5045905"/>
+    <nd ref="3398763578" lat="47.6563188" lon="9.5047589"/>
+    <nd ref="3398763577" lat="47.6562260" lon="9.5049101"/>
+    <nd ref="3757811885" lat="47.6562154" lon="9.5049274"/>
+    <nd ref="3398763576" lat="47.6561951" lon="9.5049605"/>
+    <nd ref="3398763575" lat="47.6561309" lon="9.5050670"/>
+    <nd ref="3398763574" lat="47.6560759" lon="9.5051644"/>
+    <nd ref="3398763573" lat="47.6560155" lon="9.5052697"/>
+    <nd ref="3398763572" lat="47.6559770" lon="9.5053414"/>
+    <nd ref="3398763568" lat="47.6556337" lon="9.5049169"/>
+    <nd ref="3398763569" lat="47.6557544" lon="9.5046301"/>
+    <nd ref="3398763570" lat="47.6558819" lon="9.5044464"/>
+    <nd ref="3398763571" lat="47.6559249" lon="9.5043791"/>
+    <tag k="barrier" v="fence"/>
+    <tag k="landuse" v="education"/>
+  </way>
+</new>
+</action>
+
+</osm>

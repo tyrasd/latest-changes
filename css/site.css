@@ -1,10 +1,33 @@
+/* #region CSS RELATED TO GENERAL PAGE LAYOUT */
+body {
+  margin: 0;
+  font: 15px/1.67 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
 a,
 a:hover,
 a:visited {
-  text-decoration:underline;
-  color:inherit;
+  /* text-decoration: underline; */
+  color: inherit;
 }
 
+.hide {
+  display: none;
+}
+
+/* #endregion */
+
+/* #region CSS RELATED TO INFO/WARNING MODAL */
 .infobox {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
@@ -12,64 +35,76 @@ a:visited {
   top: -100px;
   left: 0;
   right: 0;
-  margin: 5px 30px 0px;/* top / left,right / bottom */
+  margin: 5px 30px 0px;
+  /* top / left,right / bottom */
   padding: 5px 20px;
   border-radius: 10px;
-  background-color: #FFFFFF;
+  color: white;
   cursor: Default;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-  z-index: 1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 1001;
 }
 
 .show {
   animation-name: animateShowHide;
-  animation-duration: 2s;
+  animation-duration: 4s;
   animation-iteration-count: 2;
   animation-direction: alternate;
 }
 
 @keyframes animateShowHide {
-  0%   {top: -100px;}
-  30%   {top: 0px;}
-  100%  {top: 0px;}
+  0% {
+    top: -100px;
+  }
+
+  30% {
+    top: 0px;
+  }
+
+  100% {
+    top: 0px;
+  }
 }
 
 .alarm {
   background-color: red;
-  color: white;
 }
 
 .success {
   background-color: green;
-  color: black;
+}
+
+/* #endregion */
+
+/* #region CSS RELATED TO CHANGESETS COLUMN */
+
+.background {
+  background-color: #e5e5e5;
 }
 
 .heading {
   position: relative;
+  width: 293px;
+  height: auto;
+  padding: 5px 0;
+  margin: 0px auto;
 }
 
-.heading h3 {
-  text-align: center;
-}
-@media (min-width: 601px){
-  .heading h3 {
-    position: absolute;
-    left: 65px;
-  }
+.logo-latest-changes {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 25px;
+  gap: 2px;
+  margin: 0px 10px;
+  font-weight: bold;
 }
 
-.heading img {
-  width: 60px;
-  height: 60px;
-}
-@media (max-width: 600px){
-  .heading img {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    margin-bottom: 10px;
-  }
+#clock {
+  width: 30px;
+  height: 30px;
+  border: 4px solid black;
+  border-radius: 20px;
 }
 
 .heading select {
@@ -77,20 +112,569 @@ a:visited {
   margin-left: auto;
   margin-right: auto;
   display: block;
+  height: 30px;
+  width: 95%;
+  max-width: 400px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #a0a0a0;
+  padding: 4px 6px;
+  border-radius: 1px;
 }
 
 #resolution {
   cursor: pointer;
 }
 
+.circular-arrow {
+  width: 16px;
+  height: 16px;
+}
+
+#download-changesets-button {
+  display: block;
+  width: 270px;
+  padding: 10px 50px;
+  margin: 5px auto;
+  font-size: 20px;
+  color: #f3f0f0;
+  background-color: #72befb;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#download-changesets-button:hover {
+  background-color: #008dff;
+}
+
+#download-changesets-button:disabled {
+  cursor: not-allowed;
+  opacity: .3;
+}
+
+.sidebar {
+  flex: 0 1 310px;
+  overflow: auto;
+  height: 100vh;
+}
+
+/* Make sure that sidebar is shown on small screens and hide the "toggle sidebar"-icon */
+@media (max-width: 600px) {
+  .sidebar {
+    display: block;
+    flex: 1 1 auto;
+    height: 50vh;
+  }
+
+  /* Hide toggle sidebar icon on small screens*/
+  .leaflet-control-toggle {
+    display: none;
+  }
+}
+
+#results {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.result {
+  display: grid;
+  padding: 2px 6px;
+  grid-template-columns: 0fr 0fr 0fr auto 0fr;
+  grid-template-rows: auto auto auto;
+  /* | Loupe | Traffic light | Text bubble | User Name & Time | Arrow | */
+  /* | Loupe |                Changeset Comment               | Arrow | */
+  /* |                        Changeset Details                       | */
+  border-bottom: 1px solid #eee;
+  transition: background-color .2s ease-in-out;
+  -moz-transition: background-color .2s ease-in-out;
+  -webkit-transition: background-color .2s ease-in-out;
+}
+
+.result.active,
+.result:hover {
+  background-color: #f5f5f5;
+}
+
+.result.active {
+  color: #008dff !important;
+}
+
+.result .zoom {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  justify-content: center;
+
+  display: flex;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-top: 5px;
+  background-color: #e5e5e5;
+  stroke: #777;
+  box-shadow: 0 2px 4px darkslategrey;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.result .zoom:active {
+  box-shadow: 0 0 2px darkslategray;
+  transform: translateY(2px);
+}
+
+.result .zoom:hover {
+  background-color: #eee;
+}
+
+.loupe {
+  width: 20px;
+  height: 20px;
+  margin-left: 6px;
+}
+
+.traffic-light-container {
+  grid-column: 2;
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+
+  /* display: inline-block; */
+  margin-right: 3px;
+  cursor: help;
+}
+
+.traffic-light {
+  background-color: black;
+  width: 25px;
+  height: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 2px;
+  border-radius: 7px;
+}
+
+.traffic-light span {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+}
+
+.gray {
+  background-color: gray;
+}
+
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
+
+.result .text-bubble {
+  grid-column: 3;
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: help;
+}
+
+.result .text-bubble .text-bubble-svg {
+  width: 16px;
+  height: 14px;
+  margin-right: 2px;
+}
+
+.container-name-date {
+  grid-column: 4;
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  /* prevents flex item overflow issues */
+  margin-right: 8px;
+}
+
+/*In order to avoid that 'user name' and 'time since creation' jumps to a second line the
+user name is truncated if it takes up too much space*/
+.user-name {
+  flex: 1 1 0;
+  min-width: 0;
+  /* prevents flex item overflow issues */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.result .date {
+  flex: 0 0 auto;
+  white-space: nowrap;
+
+  padding-left: 8px;
+  text-decoration: underline dotted;
+  cursor: help;
+}
+
+.result .arrow {
+  grid-column: 5;
+  grid-row: 1 / span 2;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+  border-radius: 50%;
+  margin-top: 5px;
+  background-color: #e5e5e5;
+  box-shadow: 0 2px 4px darkslategrey;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Design of button when pressed */
+.result .arrow:active {
+  box-shadow: 0 0 2px darkslategray;
+  transform: translateY(2px);
+}
+
+.result .arrow:hover {
+  background-color: #eee;
+}
+
+.arrow-up-svg {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+  transform: rotate(0deg);
+  fill: #777777;
+}
+
+.arrow-up-svg.rotated {
+  transform: rotate(180deg);
+  /* Turn arrow counterclockwise when expanding */
+}
+
+.changeset-comment {
+  grid-column: 2 / span 3;
+  grid-row: 2;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.changeset-comment.expanded {
+  text-align: center;
+}
+
+.table-container {
+  grid-column: 1 / span 5;
+  grid-row: 3;
+  height: calc-size(max-content, size);
+  /* calc-size is only in draft status as of 2025-08. Thus limited browser compatibility. */
+  transition: height 0.3s ease;
+  overflow: hidden;
+  color: #333;
+}
+
+.table-container.hidden {
+  height: 0;
+}
+
+.changeset-table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  background-color: white;
+  width: 100%;
+}
+
+/* Color the right border of the first column in black. Increase the font weight of all the text in this column.
+Exclude all table headings and the changeset discussion section from this rule*/
+.changeset-table tr:not(.table-heading):not(:has(td.changeset-discussion)):not(:has(div.deleted-elements-button-container)) td:nth-child(1) {
+  border-right: 1px solid black;
+  font-weight: 600;
+}
+
+.changeset-table td {
+  padding: 0 3px;
+}
+
+.changeset-table .border-bottom {
+  border-bottom: 1px solid black;
+}
+
+.table-heading {
+  background-color: #e5e5e5;
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* Sometimes the content of 'comment' can be quite long and without whitespaces
+(e.g. the url of a website). Without the CSS declaration
+below the long text would expand the table width. */
+.table-changeset-comment {
+  overflow-wrap: anywhere;
+}
+
+.imagery-list {
+  padding-left: 0px;
+  list-style-position: inside;
+  overflow-wrap: anywhere;
+  /* To avoid overflow issues with long text without whitespaces, e.g. URL's */
+}
+
+/* Sometimes the content of 'editor' can be quite long and without whitespaces
+(e.g. 'reverter_plugin/36447;JOSM/1.5 (19431 de)'). Without the CSS declaration
+below the long text would expand the table width. */
+.editor {
+  overflow-wrap: anywhere;
+}
+
+.integrity {
+  white-space: nowrap;
+}
+
+.changeset-discussion {
+  font-weight: initial;
+  overflow-wrap: anywhere;
+}
+
+.comment-container {
+  margin-top: 10px;
+}
+
+.comment-info {
+  font-weight: 600;
+}
+
+.comment-text {
+  margin-left: 7px;
+  white-space: pre-line;
+}
+
+/* Container to let buttons to highlight deleted elements wrap nicely */
+.deleted-elements-button-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px; /* Space between buttons */
+  margin: 8px 4px;
+}
+
+/* The button to highlight deleted elements itself */
+.center-map-on-feature {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 6px;
+  padding: 14px 10px;
+  /* Generous padding for touch targets */
+  font-size: 0.9rem;
+  background-color: #e5e5e5;
+  box-shadow: 0 2px 4px darkslategrey;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+/* Hover/Active State */
+.center-map-on-feature:hover {
+  background-color: #eee;
+}
+
+.center-map-on-feature:active {
+  box-shadow: 0 0 2px darkslategray;
+  transform: translateY(2px);
+}
+
+/* Style the SVG Icon inside the button */
+.center-map-on-feature svg {
+  width: 20px;
+  height: 20px;
+  stroke: #777;
+  pointer-events: none;
+  /* Ensures click event hits the button, not the SVG */
+}
+
+/* Custom scroll bar
+  ------------------------------------------------------- */
+/* Designing for scroll-bar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: gainsboro;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Back to top button */
+.to-top {
+  cursor: pointer;
+  position: absolute;
+  background: #008dff;
+  color: white;
+  opacity: 0.8;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  left: 210px;
+  bottom: 12px;
+  transition: background 0.5s;
+}
+
+.to-top:hover {
+  color: #008dff;
+  background: white;
+}
+
+/* Position "Back to top" button differently on small screens */
+@media (max-width: 600px) {
+  .to-top {
+    left: auto;
+    bottom: calc(50% + 7px);
+    right: 65px;
+  }
+}
+
+/* #endregion */
+
+/* #region CSS RELATED TO FILTER CHANGESETS TOOLBAR */
+.filter-container {
+  padding: 5px 12px;
+}
+
+#filter-red-checkbox {
+  display: none;
+}
+
+.filter-red-checkbox-label {
+  width: 42px;
+  height: 42px;
+  background-color: #72befb;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.filter-red-color {
+  filter: grayscale(100%);
+}
+
+.filter-red-checkbox-label:hover {
+  background-color: #008dff;
+}
+
+.search-changesets-field-container {
+  position: absolute;
+  left: 60px;
+  color: #f3f0f0;
+  display: inline-block;
+}
+
+.filter-symbol {
+  position: absolute;
+  pointer-events: none;
+  left: 8px;
+  top: 12px;
+  width: 16px;
+  height: 16px;
+}
+
+.delete-filter-input {
+  position: absolute;
+  cursor: pointer;
+  left: 197px;
+  top: 11px;
+  fill: #f3f0f0;
+}
+
+.delete-filter-input:hover {
+  fill: red;
+}
+
+/* Make sure that the whole input field remains in the darker color when hovering of the x */
+.delete-filter-input:hover~.search-changesets-field {
+  background-color: #008dff;
+}
+
+.delete-filter-input-symbol {
+  width: 16px;
+  height: 16px;
+}
+
+.search-changesets-field {
+  padding: 0 30px 0 33px;
+  background-color: #72befb;
+  color: inherit;
+  border-radius: 6px;
+  border: none;
+  font-size: 18px;
+  width: 159px;
+  height: 42px;
+  vertical-align: top;
+  /*needed to keep the height of the element unchanged (https://stackoverflow.com/a/28157789/5263954)*/
+}
+
+::placeholder {
+  color: #cad9e7;
+  opacity: 1;
+}
+
+.search-changesets-field:hover {
+  background-color: #008dff;
+}
+
+/* #endregion */
+
+/* #region CSS RELATED TO LEAFLET MAP LAYOUT */
+.map-container {
+  position: relative;
+  flex: 1 1 auto;
+  height: 100vh;
+}
+
 #map {
+  background: white;
+  position: relative;
+  height: 100%;
+  width: 100%;
   opacity: 1;
   transition: opacity .5s ease-in-out;
   -moz-transition: opacity .5s ease-in-out;
   -webkit-transition: opacity .5s ease-in-out;
-  flex: 1 1 auto;
-  height: 100vh;
 }
+
 #map.faded {
   opacity: .5;
 }
@@ -98,145 +682,180 @@ a:visited {
 #zoom-in {
   position: absolute;
   left: 0;
-  top: 40px;
+  top: 0;
   text-align: center;
   font-size: 25px;
   font-weight: bold;
   pointer-events: none;
-  opacity: .5;
+  opacity: .6;
   padding-left: 44px;
   z-index: 444;
   width: 100%;
+  color: white;
+  background-color: red;
+  box-sizing: border-box;
 }
 
-.hide {
-  display: none;
+#loading-animation {
+  position: absolute;
+  left: calc(50% - 40px);
+  top: 40%;
+  border: 16px solid white;
+  border-radius: 50%;
+  border-top: 16px solid #2074B6;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 2s linear infinite;
+  /* Safari */
+  animation: spin 2s linear infinite;
+  z-index: 444;
+  pointer-events: none;
 }
 
-.result {
-    border-bottom:1px solid #eee;
+/* Text shown below the loading spinner (e.g. which Overpass server is currently tried) */
+#loading-animation-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  /* Spinner: top 40% + height 50px + borders 16px*2 + 10px gap */
+  top: calc(40% + 92px);
+  /* Shrink-to-fit: background only as wide as the text, centered via auto margins */
+  width: -webkit-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 5px 12px;
+  color: white;
+  background-color: rgba(100, 100, 100, .5);
+  border-radius: 5px;
+  overflow-wrap: anywhere;
+  pointer-events: none;
+  z-index: 444;
 }
 
-.affix {
-    position:fixed;
-}
-
-span.load {
-    cursor:pointer;
-}
-
-a.l {
-    padding:2px;
-    text-decoration:underline;
-    font-size:13px;
-    margin:0 4px;
-}
-
-h2, p {
-    margin:0;
-    padding:0 20px;
-}
-
-.result {
-  padding: 5px 0 0 0;
-  transition: background-color .2s ease-in-out;
-  -moz-transition: background-color .2s ease-in-out;
-  -webkit-transition: background-color .2s ease-in-out;
+@media (max-width: 600px) {
+  #loading-animation {
+    top: 0%;
   }
-  .result.active,
-  .result:hover {
-    background-color: #f5f5f5;
-  }
-  .result.active {
-    color: #00c500 !important;
-  }
-  .result .date {
-    padding-left: 5px;
-    }
 
-.changeset {
-  padding: 0px 0px 5px 20px;
-  height: 35px;
-  overflow: hidden;
-  }
-  .changeset a { text-decoration: none;}
-  .changeset a.comment:first-letter { text-transform: capitalize; }
-  .result.active .changeset,
-  .result:hover .changeset { height: auto; min-height: 35px;}
-  .changeset:first-line { font-weight: bold; font-size: 18px; }
-
-.reveal { visibility: hidden; }
-  a.reveal { text-decoration: none; opacity: 0.6; }
-  a.reveal:hover { text-decoration: underline; opacity: 1; }
-  .result.active .reveal,
-  .result:hover .reveal { visibility: visible; }
-
-h2 select {
-  width: auto;
-  height: auto;
-  border: 0;
-  background: transparent;
-  color: black;
-  font-weight: bold;
-  font-size: 28px;
-  padding: 0;
-  margin: 0;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  vertical-align: baseline;
-}
-
-.col {
-  flex: 0 1 310px;
-  overflow: auto;
-  height: 100vh;
-}
-@media (max-width: 600px){
-  .col {
-    flex: 1 1 auto;
-    height: 50vh;
+  #loading-animation-text {
+    top: 92px;
   }
 }
 
-.container {
-  /* margin: 0 auto;
-  overflow: hidden; */
-  display: flex;
-  /* flex-wrap: wrap; */
-  /* max-width: 100%; */
-}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
 
-@media (max-width: 600px){
-  .container {
-    flex-direction: column;
+  100% {
+    transform: rotate(360deg);
   }
 }
 
-/* Custom scroll bar
-------------------------------------------------------- */
-/* Designing for scroll-bar */ 
-::-webkit-scrollbar { 
-    width: 6px; 
-} 
-
-/*Increase size of scroll bar on hover*/
-*:hover::-webkit-scrollbar {
-  width: auto;
-  /* height: 10px; */
+/* Toggle sidebar icon */
+.leaflet-control-toggle-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  background-color: #000;
+  -webkit-mask-image: url(../img/icon-sidebar-left.svg);
+  mask-image: url(../img/icon-sidebar-left.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
 }
 
-/* Track */ 
-::-webkit-scrollbar-track { 
-    background: gainsboro; 
-    border-radius: 5px; 
-} 
-
-/* Handle */ 
-::-webkit-scrollbar-thumb { 
-    background: black; 
-    border-radius: 5px; 
-} 
-
-/* Handle on hover */ 
-::-webkit-scrollbar-thumb:hover { 
-    background: #555; 
+.stylePopup .leaflet-popup-content-wrapper {
+  opacity: 0.9
 }
+
+.tag-table-container {
+  border-collapse: collapse;
+  margin: 5px 0;
+  border-top: 1px solid #c9c8c8;
+}
+
+.tag-table-container tr {
+  border-bottom: 1px solid black;
+}
+
+.tag-table-container td {
+  padding: 0 3px;
+}
+
+/* Color the right border of the first column in black. Increase the font weight of all the text in this column. */
+.tag-table-container td:nth-child(1) {
+  border-right: 1px solid black;
+  font-weight: 600;
+}
+
+/* Color the right border of the second column in a brighter shade of gray */
+.tag-table-container td:nth-child(2) {
+  border-right: 1px solid rgb(170, 170, 170);
+}
+
+/* Wrap long text in the 'Old' and 'New' column if there is not enough space */
+.tag-table-container td:nth-child(2),
+.tag-table-container td:nth-child(3) {
+  overflow-wrap: anywhere;
+}
+
+.tag-table-container a {
+  text-decoration: none;
+  color: #004764;
+}
+
+.tag-table-container a:hover {
+  text-decoration: underline;
+}
+
+/* Truncate text in table on small screens */
+@media (max-width: 600px) {
+  .tag-table-container td {
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.create {
+  background-color: #c8ffc8;
+}
+
+.delete {
+  background-color: #ffcccc;
+}
+
+.modify {
+  background-color: #ffffae;
+}
+
+.capitalize {
+  display: inline-block;
+}
+
+.capitalize::first-letter {
+  text-transform: capitalize;
+}
+
+.metatags {
+  background-color: #e5e5e5;
+}
+
+.clock-with-circular-arrow-symbol {
+  vertical-align: top;
+  width: 16px;
+  height: 16px;
+  padding-left: 3px;
+  fill: #333;
+}
+
+.clock-with-circular-arrow-symbol:hover {
+  fill: black;
+}
+
+/* #endregion */

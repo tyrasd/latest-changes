@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="OpenStreetMap server" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<changeset id="122803935" created_at="2022-06-24T13:36:38Z" open="false" comments_count="1" changes_count="1" closed_at="2022-06-24T13:36:38Z" min_lat="47.6521043" min_lon="9.4757572" max_lat="47.6521043" max_lon="9.4757572" uid="257555" user="rene78">
+  <tag k="changesets_count" v="20932"/>
+  <tag k="comment" v="Schinacher immer noch geöffnet. Aber eher Kinderkleidungsladen als Spielwarengeschäft. Abgeändert."/>
+  <tag k="created_by" v="iD 2.21.1"/>
+  <tag k="host" v="https://www.openstreetmap.org/edit"/>
+  <tag k="imagery_used" v="Bing Maps Aerial"/>
+  <tag k="locale" v="de"/>
+</changeset>
+<changeset id="122803735" created_at="2022-06-24T13:31:34Z" open="false" comments_count="0" changes_count="3" closed_at="2022-06-24T13:31:35Z" min_lat="47.6504567" min_lon="9.4783183" max_lat="47.6505193" max_lon="9.4784087" uid="257555" user="rene78">
+  <tag k="changesets_count" v="20928"/>
+  <tag k="closed:note" v="3238516;3238517"/>
+  <tag k="comment" v="POI aktualisiert"/>
+  <tag k="created_by" v="iD 2.21.1"/>
+  <tag k="host" v="https://www.openstreetmap.org/edit"/>
+  <tag k="imagery_used" v="Bing Maps Aerial"/>
+  <tag k="locale" v="de"/>
+  <tag k="resolved:help_request:fixme_tag" v="4"/>
+</changeset>
+<changeset id="122800892" created_at="xxxx-02-12T12:16:12Z" open="false" comments_count="0" changes_count="5" closed_at="2024-02-12T12:16:12Z" min_lat="47.6529481" min_lon="9.4706017" max_lat="47.6532025" max_lon="9.4754633" uid="257555" user="rene78">
+  <tag k="changesets_count" v="20920"/>
+  <tag k="comment" v="Kleinere Änderungen"/>
+  <tag k="created_by" v="iD 2.21.1"/>
+  <tag k="host" v="https://www.openstreetmap.org/edit"/>
+  <tag k="imagery_used" v="Maxar Premium Imagery"/>
+  <tag k="locale" v="de"/>
+  <tag k="resolved:missing_tag:descriptive" v="1"/>
+</changeset>
+<changeset id="122800198" created_at="2022-06-24T11:57:18Z" open="false" comments_count="0" changes_count="2" closed_at="2022-06-24T11:57:19Z" min_lat="47.6506943" min_lon="9.4788388" max_lat="47.6518755" max_lon="9.4808659" uid="257555" user="rene78">
+  <tag k="changesets_count" v="20919"/>
+  <tag k="comment" v="2 Läden als geschlossen gekennzeichnet"/>
+  <tag k="created_by" v="iD 2.21.1"/>
+  <tag k="host" v="https://www.openstreetmap.org/edit"/>
+  <tag k="imagery_used" v="Maxar Premium Imagery"/>
+  <tag k="locale" v="de"/>
+  <tag k="warnings:outdated_tags:noncanonical_brand" v="2"/>
+  <tag k="resolved:almost_junction:highway-highway" v="1"/>
+  <tag k="resolved:outdated_tags:incomplete_tags" v="4"/>
+  <tag k="resolved:outdated_tags:noncanonical_brand" v="2"/>
+</changeset>
+<changeset id="122713614" created_at="2022-06-22T13:47:54Z" open="false" comments_count="0" changes_count="134" closed_at="2022-06-22T13:47:55Z" min_lat="47.6677780" min_lon="9.4909711" max_lat="47.6707548" max_lon="9.4968122" uid="257555" user="rene78">
+  <tag k="changesets_count" v="20910"/>
+  <tag k="comment" v="Kleinere Änderungen"/>
+  <tag k="created_by" v="iD 2.21.1"/>
+  <tag k="host" v="https://www.openstreetmap.org/edit"/>
+  <tag k="imagery_used" v="Maps4BW (LGL-BW, www.lgl-bw.de);Maxar Premium Imagery"/>
+  <tag k="locale" v="de"/>
+</changeset>
+<changeset id="122544637" created_at="2022-06-18T12:17:18Z" open="false" comments_count="0" changes_count="2" closed_at="2022-06-18T12:17:19Z" min_lat="47.6525430" min_lon="9.4788929" max_lat="47.6525494" max_lon="9.4789354" uid="257555" user="rene78">
+  <tag k="changesets_count" v="20879"/>
+  <tag k="comment" v="POI aktualisiert"/>
+  <tag k="created_by" v="iD 2.21.0"/>
+  <tag k="host" v="https://www.openstreetmap.org/edit"/>
+  <tag k="imagery_used" v="Bing Maps Aerial"/>
+  <tag k="locale" v="de"/>
+</changeset>
+<changeset id="122543467" created_at="2022-06-18T11:42:55Z" open="false" comments_count="0" changes_count="31" closed_at="2022-06-18T11:43:20Z" min_lat="47.3778963" min_lon="8.4838342" max_lat="47.7245848" max_lon="9.5381303" uid="257555" user="rene78">
+  <tag k="comment" v="Add 2 Bench, 2 Drinking water, 2 Bicycle parking, Cafe, Picnic table, Fountain, Place allotments, Dentist, Toilets, 2 It, Dry cleaning, 2 Table tennis, 2 Restaurant, Craft stonemason, Clothes, Farm, Hairdresser; 6 items modified."/>
+  <tag k="created_by" v="OsmAnd+ 4.1.11"/>
+</changeset>
+<changeset id="493" created_at="2005-10-18T22:15:34Z" open="false" comments_count="0" changes_count="1" closed_at="2005-10-18T23:15:34Z" min_lat="52.2451692" min_lon="0.3550821" max_lat="52.2451692" max_lon="0.3550821" uid="662" user="Noodles">
+  <tag k="comment" v="POI gelöscht"/>
+  <tag k="warnings:outdated_tags:noncanonical_brand" v="9"/>
+  <tag k="resolved:almost_junction:highway-highway" v="1"/>
+  <tag k="resolved:outdated_tags:incomplete_tags" v="2"/>
+  <tag k="resolved:outdated_tags:noncanonical_brand" v="2"/>
+</changeset>
+<changeset id="103017971" created_at="2022-06-22T13:47:54Z" open="false" comments_count="0" changes_count="134" closed_at="2022-06-22T13:47:55Z" min_lat="47.6677780" min_lon="9.4909711" max_lat="47.6707548" max_lon="9.4968122" uid="257555" user="rene78">
+  <tag k="changesets_count" v="20910"/>
+  <tag k="comment" v="Kleinere Änderungen"/>
+  <tag k="created_by" v="iD 2.21.1"/>
+  <tag k="host" v="https://www.openstreetmap.org/edit"/>
+  <tag k="imagery_used" v="Maps4BW (LGL-BW, www.lgl-bw.de);Maxar Premium Imagery"/>
+  <tag k="locale" v="de"/>
+</changeset>
+<changeset id="154564373" created_at="2024-07-29T13:57:05Z" open="false" comments_count="0" changes_count="1" closed_at="2024-07-29T13:57:05Z" min_lat="47.6556337" min_lon="9.5039139" max_lat="47.6569488" max_lon="9.5053414" uid="1213571" user="mcliquid">
+  <tag k="comment" v="Namen und Details der Schule ergänzt"/>
+  <tag k="created_by" v="JOSM/1.5 (19154 de)"/>
+  <tag k="source" v="Esri World Imagery; Bing"/>
+</changeset>
+<changeset id="154564334" created_at="2024-07-29T13:56:35Z" open="false" comments_count="0" changes_count="2" closed_at="2024-07-29T13:56:35Z" min_lat="47.6561349" min_lon="9.5043089" max_lat="47.6562776" max_lon="9.5047565" uid="1213571" user="mcliquid">
+  <tag k="comment" v="Namen und Details der Schule ergänzt"/>
+  <tag k="created_by" v="JOSM/1.5 (19154 de)"/>
+  <tag k="source" v="Esri World Imagery; Bing"/>
+</changeset>
+</osm>
+<!-- Example response from the OSM API which is called in the 2nd API query in site.js -->
